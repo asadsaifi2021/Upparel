@@ -1,0 +1,32 @@
+.featuredProducts {
+    margin: 100px 200px;
+  
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+  
+      h1 {
+        flex: 2;
+        text-transform: capitalize;
+      }
+  
+      p {
+        flex: 3;
+        color: gray;
+      }
+    }
+  
+    .bottom {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap; /* Add this property to wrap items onto new lines */
+    }
+  
+    .bottom > * {
+      width: calc(20% - 10px); /* Set the width of the child elements to 20% (5 items in a row), minus 10px for the gap */
+      margin-bottom: 50px; /* Add some bottom margin to the child elements */
+    }
+  }
