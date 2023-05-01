@@ -1,0 +1,67 @@
+.card{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+    
+  
+    .image{
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+      &:hover{
+        .secondImage{
+          z-index: 2;
+        }
+      }
+  
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+      }
+  
+      .mainImage{
+        z-index: 1;
+      }
+  
+      span{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background-color: white;
+        color: red;
+        border-radius: 0.5rem;
+        padding: 3px 5px;
+        z-index: 3;
+        font-weight: bold;
+        font-size: 11px;
+      }
+    }
+  
+    h2{
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  
+    .prices{
+      display: flex;
+      gap: 20px;
+  
+      h3{
+        font-size: 18px;
+        font-weight: 500;
+  
+        &:first-child{
+          color: gray;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
