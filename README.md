@@ -1,2 +1,0 @@
-# Upparel
-Upparel Clothing Store
